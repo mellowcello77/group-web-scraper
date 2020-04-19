@@ -1,0 +1,10 @@
+Prettify the HTML page:
+
+store_address = soup.find('div', {'id': 'store-info'})
+
+print(store_address.prettify())
+
+Find Id in All search:
+
+for link in soup.find_all('a', id='telephone'):
+    print(link.get('href'))
